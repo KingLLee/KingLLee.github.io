@@ -1,0 +1,54 @@
+/* ==========================================================================
+   全局海洋背景
+   ========================================================================== */
+
+   :root {
+    --global-text-color: #ffffff;
+    --global-text-color-light: #ffffff;
+    --global-link-color: #ffffff;
+    --global-link-color-hover: #dddddd;
+    --global-masthead-link-color: #000000;
+    --global-masthead-link-color-hover: #dddddd;
+  }
+
+  
+
+/* 背景图应用到 body */
+body {
+  background-image: url('/images/ocean_1.jpeg'); /* 替换为你的高清海洋图片 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff; /* 全局文字颜色，可根据背景调整 */
+  position: relative;
+  z-index: 0;
+}
+
+/* 半透明遮罩，让文字可读 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* 黑色半透明 */
+  z-index: 1;
+}
+
+/* 确保 layout 内元素在遮罩上层显示 */
+header, footer, #main, .page, .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 链接和标题增强可读性 */
+a, h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(202, 194, 194, 0);
+}
+
+/* 移动端优化 */
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* 移动端滚动背景 */
+  }
+}

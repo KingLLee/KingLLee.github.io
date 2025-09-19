@@ -8,38 +8,18 @@ redirect_from:
 ---
 
 {% include base_path %}
+[📄 CV.pdf](/files/250919-CV-JinLi.pdf){:target="_blank" download="CV_JL.pdf"}
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
-
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Ph.D in Beijing/China, Institute of Atmospheric Physics, Chinese Academy of Sciences, 2021-Now (in progress)
+* B.S. in Nanjing/China, Nanjing University of Information Science and Technology, 2017-2021
   
 Skills
 ======
-* Skill 1
+* Fortran and Python programing
 * Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
 
 Publications
 ======
@@ -53,6 +33,7 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
+{% comment %}
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
@@ -62,3 +43,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+{% endcomment %}

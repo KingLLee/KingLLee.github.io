@@ -8,12 +8,12 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+site_theme               : "air" # Currently available options are "default", "air"
+title                    : "Jin Li's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Jin Li"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://kingllee.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -23,38 +23,38 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  avatar           : "profile.jpeg"
+  name             : "Jin Li"
+  pronouns         : #"he" # example: "she/her"  
+  bio              : "Air-Sea Interaction and Ocean Modeling"
+  location         : "Beijing/China"
+  employer         : "Institute of Atmospheric Physics"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "lijin@mail.iap.ac.cn" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0000-1247-0569"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  researchgate     : "https://www.researchgate.net/profile/Jin-Li-222?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : #"academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -81,12 +81,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  #books:
+  #  title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  #conferences:
+  #  title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -230,6 +230,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  Interests:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -299,7 +302,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
