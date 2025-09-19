@@ -1,3 +1,6 @@
+# System files
+.DS_Store
+
 # Ignore the contents of the _site directory and other cache directories
 _site/
 .sass-cache/
@@ -18,3 +21,18 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Local files
+file_list.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+
