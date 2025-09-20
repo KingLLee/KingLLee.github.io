@@ -121,7 +121,9 @@
 
 .author__name {
   margin: 0;
-
+  font-size: 45px!important;       // 设置字体大小
+  text-align: left;    // 让名字居中
+  font-weight: bold;     // 加粗
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;

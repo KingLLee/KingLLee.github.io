@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Personal website showing Jin Li's Background and Experiences"
+title: "Personal Website of Background and Experiences"
 author_profile: true
 redirect_from: 
   - /about/
@@ -27,12 +27,28 @@ I don't get used to show myself to other people. Like running, what I have to do
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 </style>
 
 <div class="center-mask">
   <img src="../images/marathon.jpeg" alt="我的头像" width="270"/>
-  <figcaption>Photo was taken when Jin Li participated his First Marathon <br> Race in Nanjing, China</figcaption>
+  <figcaption class="caption">
+    Photo was taken when Jin Li participated his First Marathon <br>
+    Race in Nanjing, China
+  </figcaption>
 </div>
+
+<style>
+.center-mask {
+  text-align: center;
+}
+.caption {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #DEDCDC;   /* 深灰色 */
+}
+</style>
+
 
 
 Describe in Short
