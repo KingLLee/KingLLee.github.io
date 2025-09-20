@@ -52,6 +52,11 @@
     clear: both;
     list-style-type: none;
   }
+  ul.visible-links {
+    display: flex;
+    flex-wrap: nowrap;      // 强制一行显示
+    gap: 1em;             // 控制水平间距
+  }
 }
 
 .masthead__menu-item {
@@ -61,7 +66,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 4em;
     font-weight: 700;
   }
 }
