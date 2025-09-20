@@ -52,6 +52,15 @@
     clear: both;
     list-style-type: none;
   }
+  ul.visible-links {
+    display: flex;
+    gap: 0.1em;  // 这里控制水平间距
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: nowrap
+  }
+
 }
 
 .masthead__menu-item {
@@ -59,9 +68,10 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  margin-right: 2em;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 3em;
     font-weight: 700;
   }
 }
