@@ -54,39 +54,3 @@ a, h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ============================
-   Custom Masthead Adjustments
-   ============================ */
-
-/* 设置导航菜单水平排列和间距 */
-ul.visible-links {
-  display: flex;
-  gap: 0.5em;      /* 调整水平间距 */
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-
-/* 大屏幕下隐藏 hamburger menu（三条横线按钮） */
-.navicon {
-  display: none !important;
-}
-
-/* 大屏幕下保持 hidden-links 隐藏 */
-ul.hidden-links {
-  display: none !important;
-}
-
-/* 小屏幕自适应 */
-@media (max-width: 768px) {
-  /* 显示 hamburger menu 按钮 */
-  .navicon {
-    display: block !important;
-  }
-
-  /* 隐藏水平导航菜单，改由 hidden-links 展示 */
-  ul.visible-links {
-    display: none;
-  }
-}
