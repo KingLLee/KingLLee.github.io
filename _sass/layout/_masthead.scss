@@ -52,14 +52,6 @@
     clear: both;
     list-style-type: none;
   }
-  ul.visible-links {
-    display: flex;
-    gap: 0.1em;  // 这里控制水平间距
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    flex-wrap: nowrap
-  }
 
 }
 
@@ -68,10 +60,10 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
-  margin-right: 2em;
+
 
   &--lg {
-    padding-right: 3em;
+    padding-right: 5em;
     font-weight: 700;
   }
 }
