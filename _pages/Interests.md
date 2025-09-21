@@ -29,6 +29,7 @@ author_profile: true
   text-align: center;    /* 文字居中 */
 }
 </style>
+
 - Ocean modeling
 - Coupled climate modeling
 - Turbulent Simublation (Large Eddy Simulation, LES)
@@ -53,7 +54,7 @@ author_profile: true
   margin-right: auto;    /* 左右自动外边距 */
   text-align: center;    /* 文字居中 */
 }
-
+</style>
 
 ## Hobbies
 - Running
