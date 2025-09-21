@@ -17,8 +17,9 @@ Education
   
 Skills
 ======
-* Fortran and Python programing
-* Skill 2
+* Strong self-learning ability and skilled in hands-on tasks
+* Proficient in programming with Python and Fortran for scientific computing and data analysis
+* Numerical Modeling & Simulation
 
 
 Publications
