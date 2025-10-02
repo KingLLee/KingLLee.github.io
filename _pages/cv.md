@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[📄 CV.pdf](/files/250919-CV-JinLi.pdf){:target="_blank" download="CV_JL.pdf"}
+[📄 CV.pdf](/files/251002-CV-Jin Li.pdf){:target="_blank" download="CV_JL.pdf"}
 
 Education
 ======
