@@ -20,7 +20,8 @@ Skills
 * Strong self-learning ability and skilled in hands-on tasks
 * Proficient in programming with Python and Fortran for scientific computing and data analysis
 * Numerical Modeling & Simulation
-
+* Data Analysis: Climate and Ocean Datasets
+* Academic Writing and Presentations in English
 
 Publications
 ======
