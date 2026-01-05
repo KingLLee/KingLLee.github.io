@@ -3,7 +3,7 @@ title: "Application and Evaluation of a Deep Learning-Based Vertical Mixing Para
 collection: talks
 type: "Presentation"
 permalink: /talks/2025-12-19-AGU-Present
-venue: "EGU 2025 Meeting"
+venue: "AGU 2025 Meeting"
 date: 2025-12-19
 location: "New Orleans, United States"
 ---
