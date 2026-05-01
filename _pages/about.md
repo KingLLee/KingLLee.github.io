@@ -9,10 +9,9 @@ redirect_from:
 
 Welcome to my homepage!
 
+## At the beginning
 
-At the beginning
-======
-Like running, what I have to do is to keep breathing silent, matain comfortable pace and endure the continoues pressure from mental, finally letting me run much longer and faster than I used to be. The picture below depicts the moment when I challenged myself with half-marathon race. And I'm preparing for another half-marathon race. But here I am! To arrange my current situation and fight for the future long-lasting marathon-like career, I sincerely put down my recent work and other things concerning myself in my homepage.
+Like running, what I have to do is to keep breathing silent, maintain comfortable pace and endure the continuous pressure from mental, finally letting me run much longer and faster than I used to be. The picture below depicts the moment when I challenged myself with half-marathon race. And I'm preparing for another half-marathon race. But here I am! To arrange my current situation and fight for the future long-lasting marathon-like career, I sincerely put down my recent work and other things concerning myself in my homepage.
 
 <style>
 .center-mask {
@@ -27,34 +26,40 @@ Like running, what I have to do is to keep breathing silent, matain comfortable 
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
-
+.caption {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #737373;
+  text-align: center;
+}
 </style>
 
 <div class="center-mask">
-  <img src="../images/marathon.jpeg" alt="我的头像" width="270"/>
+  <img src="../images/marathon.jpeg" alt="Marathon" width="270"/>
   <figcaption class="caption">
     Photo was taken when Jin Li participated his First Marathon <br>
     Race in Nanjing, China
   </figcaption>
 </div>
 
-<style>
-.center-mask {
-  text-align: center;
-}
-.caption {
-  margin-top: 8px;
-  font-size: 15px;
-  color: #DEDCDC;   /* 深灰色 */
-}
-</style>
+## Research Profile
 
+Jin Li is a Ph.D. candidate in Meteorology at the Institute of Atmospheric Physics (IAP), Chinese Academy of Sciences (CAS), supervised by Prof. Yongqiang Yu. His research focuses on **climate dynamics and ocean modeling**, with emphasis on ENSO variability, subsurface ocean processes, and physically informed machine-learning parameterizations. He integrates climate simulations and large-eddy simulations (LES) to improve the representation of subgrid-scale ocean mixing and its impact on climate variability.
 
+He is broadly interested in multiscale interactions across the Earth system and interdisciplinary approaches combining physical understanding with data-driven modeling.
 
-Describe in Short
-======
-Jin Li is now persuing his Doctor degree of meterology in Institute of Atmospheric Physics, University of Chinese Academy of Sciences. He was supervised by Prof. Yongqiang Yu. His research interests include the ocean modeling combaining with artificial intelligence methods and interaction between atmosphere and ocean, whose target is to improve the fedelity of ocean simulation. Recently, he fucoses on the programs showing below:
-* Use Large Eddy Simulation to improve the data-driven vertical mixing scheme
-* Construct the coupling interface of the New Generation ocean circulation model LICOM (LICOM-CUBE)
+## Education
 
-More detailed information of these pragram are listed in Portfolio.
+- **Ph.D. in Meteorology** (Expected June 2026)  
+  Institute of Atmospheric Physics, Chinese Academy of Sciences, Beijing, China  
+  Advisor: Prof. Yongqiang Yu
+
+- **B.S. in Atmospheric Sciences** (2021)  
+  Nanjing University of Information Science and Technology (NUIST), Nanjing, China  
+  Advisor: Prof. Xiaolei Zou
+
+## Current Research
+
+- Using Large Eddy Simulation (LES) to develop physics-informed vertical mixing parameterizations
+- Online evaluation of learned mixing schemes in LICOM3.0 ocean model
+- ENSO asymmetry and the role of ocean zonal currents in OMIP2 simulations

@@ -13,7 +13,19 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign nav_url = link.url | remove: 'index.html' %}
+            {% assign current_url = page.url | remove: 'index.html' %}
+            {% assign is_active = false %}
+            {% if link.url == '/' %}
+              {% if page.url == '/' or page.url == '' %}
+                {% assign is_active = true %}
+              {% endif %}
+            {% elsif current_url contains nav_url %}
+              {% assign is_active = true %}
+            {% endif %}
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>{{ link.title }}</a>
+            </li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>

@@ -1,54 +1,268 @@
 /* ==========================================================================
-   全局海洋背景
+   Custom Styles — Clean Modern Academic
    ========================================================================== */
 
-   :root {
-    --global-text-color: #ffffff;
-    --global-text-color-light: #ffffff;
-    --global-link-color: #ffffff;
-    --global-link-color-hover: #dddddd;
-    --global-masthead-link-color: #000000;
-    --global-masthead-link-color-hover: #dddddd;
-  }
+// ==========================================================================
+// Light mode
+// ==========================================================================
+:root {
+  --global-base-color                 : #fafafa;
+  --global-bg-color                   : #ffffff;
+  --global-text-color                 : #171717;
+  --global-text-color-light           : #737373;
+  --global-link-color                 : #2f4cd4;
+  --global-link-color-hover           : #1e3a9e;
+  --global-link-color-visited         : #4f46e5;
+  --global-border-color               : #e5e5e5;
+  --global-masthead-link-color        : #525252;
+  --global-masthead-link-color-hover  : #2f4cd4;
+  --global-footer-bg-color            : #f5f5f5;
+  --global-code-background-color      : #f5f5f5;
+  --global-code-text-color            : #171717;
+  --global-fig-caption-color          : #737373;
+}
 
-  
+// ==========================================================================
+// Dark mode
+// ==========================================================================
+html[data-theme="dark"] {
+  --global-base-color                 : #0a0a0a;
+  --global-bg-color                   : #171717;
+  --global-text-color                 : #ededed;
+  --global-text-color-light           : #a3a3a3;
+  --global-link-color                 : #818cf8;
+  --global-link-color-hover           : #a5b4fc;
+  --global-link-color-visited         : #6366f1;
+  --global-border-color               : #262626;
+  --global-masthead-link-color        : #a3a3a3;
+  --global-masthead-link-color-hover  : #818cf8;
+  --global-footer-bg-color            : #171717;
+  --global-code-background-color      : #0a0a0a;
+  --global-code-text-color            : #ededed;
+  --global-fig-caption-color          : #a3a3a3;
+}
 
-/* 背景图应用到 body */
+// ==========================================================================
+// Typography
+// ==========================================================================
 body {
-  background-image: url('/images/ocean_1.jpeg'); /* 替换为你的高清海洋图片 */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #ffffff; /* 全局文字颜色，可根据背景调整 */
-  position: relative;
-  z-index: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 半透明遮罩，让文字可读 */
-body::before {
+h1, .page__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+}
+
+h2, .page__content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+h3, .page__content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.page__content p, .archive__item-excerpt {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  line-height: 1.75;
+}
+
+.page__meta {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
+// ==========================================================================
+// Masthead
+// ==========================================================================
+.masthead {
+  border-bottom: 1px solid var(--global-border-color);
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
+html[data-theme="dark"] .masthead {
+  background: rgba(23, 23, 23, 0.8);
+}
+
+.greedy-nav {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.greedy-nav a {
+  color: var(--global-masthead-link-color);
+}
+.greedy-nav a:hover {
+  color: var(--global-masthead-link-color-hover);
+}
+
+// --- Active nav ---
+.greedy-nav a.active {
+  color: var(--global-link-color) !important;
+  font-weight: 600;
+}
+.greedy-nav a.active::after {
   content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1); /* 黑色半透明 */
-  z-index: 1;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 2px;
+  background: var(--global-link-color);
+  border-radius: 2px;
 }
 
-/* 确保 layout 内元素在遮罩上层显示 */
-header, footer, #main, .page, .container {
-  position: relative;
-  z-index: 1;
+// ==========================================================================
+// Sidebar
+// ==========================================================================
+.author__avatar img {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.author__avatar img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* 链接和标题增强可读性 */
-a, h1, h2, h3, h4, h5, h6 {
+.author__name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  font-style: normal;
+}
+
+.author__urls {
+  font-size: 0.85rem;
+}
+
+.author__urls-wrapper .btn--inverse {
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  color: var(--global-text-color);
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  transition: all 0.15s ease;
+}
+.author__urls-wrapper .btn--inverse:hover {
+  background: var(--global-link-color);
+  border-color: var(--global-link-color);
   color: #fff;
-  text-shadow: 1px 1px 4px rgba(202, 194, 194, 0);
 }
 
-/* 移动端优化 */
+// ==========================================================================
+// Page
+// ==========================================================================
+.page__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.page__content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0;
+  border-left: none;
+  color: var(--global-text-color);
+}
+
+.page__content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+// ==========================================================================
+// Links
+// ==========================================================================
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+// ==========================================================================
+// Publication / Archive items
+// ==========================================================================
+.archive__item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.archive__item:last-child {
+  border-bottom: none;
+}
+.archive__item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+// ==========================================================================
+// Buttons
+// ==========================================================================
+.btn--primary {
+  background: var(--global-link-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.55rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+  display: inline-block;
+}
+.btn--primary:hover {
+  background: var(--global-link-color-hover);
+  text-decoration: none;
+}
+
+// ==========================================================================
+// Footer
+// ==========================================================================
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+  background: var(--global-footer-bg-color);
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  padding: 1.5rem;
+}
+
+// ==========================================================================
+// Misc
+// ==========================================================================
+body, .masthead, .page__footer, .author__avatar img,
+a, h1, h2, h3, .btn--primary, .archive__item {
+  transition: background-color 0.2s ease, color 0.2s ease,
+              border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+// ==========================================================================
+// Responsive
+// ==========================================================================
 @media screen and (max-width: 768px) {
-  body {
-    background-attachment: scroll; /* 移动端滚动背景 */
-  }
+  body { font-size: 15px; }
+  h1, .page__title { font-size: 1.5rem; }
+  h2, .page__content h2 { font-size: 1.1rem; }
 }
